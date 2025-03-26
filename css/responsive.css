@@ -130,8 +130,8 @@
         transform: translate(-50%);
     }
     .ring{
-        width: 300px !important;
-        height: 300px !important;
+        width: 200px !important;
+        height: 200px !important;
     }
     .body-right span{
         font-size: 1.9rem !important;
