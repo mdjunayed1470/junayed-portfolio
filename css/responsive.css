@@ -134,8 +134,8 @@
         height: 300px !important;
     }
     .body-right span{
-        font-size: 2.5rem !important;
-        line-height: 100px;
+        font-size: 1.9rem !important;
+        line-height: 40px !important;
     }
     /* page 2 responsive end */
 }
