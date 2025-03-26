@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Miriam+Libre:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --miriam: "Miriam Libre", sans-serif;
+    --handjet: "Handjet", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #171717;
+}
+img {
+    width: 100%; 
+    height: auto;
+    border: 2px solid #000; 
+    display: block;
+    margin: 0 auto; 
+}
+/* basic code ends */
+/* header start */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    border-bottom: 1px solid white;
+    background: #171717;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo{
+    border: 1px solid white;
+    padding: 8px;
+}
+.logo i{
+    font-size: 30px;
+    color: #fff;
+    padding: 5px;
+}
+
+/* toggleable navbar start*/
+.nav_link.active {
+    display: block;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: white;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    .nav_link {
+        display: none;
+        flex-direction: column;
+    }
+    .nav_link a{
+        padding: 10px 0;
+    }
+    .nav_link.active {
+        display: flex;
+    }
+}
+/* toggleable navbar end */
+/* nav_link start */
+.nav_link a:active{
+    color: rgb(0, 188, 212);
+}
+.nav_link a:hover{
+    color: rgb(0, 188, 212);
+}
+
+.nav_link a{
+    margin: 0 2.5rem;
+    font-size: 1.5rem;
+    font-family: "Handjet", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    line-height: 28px;
+    transition: .8s;
+}
+
+/* nav bar end */
+/* banner start here  */
+#banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    margin-top: 3rem;
+}
+
+    .banner-detail h3{
+        font-family: var(--miriam);
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 24px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 1.2rem;
+    }
+.banner-detail h1{
+    font-family: var(--handjet);
+    font-weight: 400;
+    font-size: 5.5rem;
+    line-height: 96px;
+    color: rgb(255, 255, 255);
+}
+
+.banner-detail h2{
+    font-family: var(--handjet);
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    margin-top: 1.2rem;
+}
+.banner-detail p{
+    font-family: var(--miriam);
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    width: 80%;
+}
+.banner_btn{
+    border: none;
+    clip-path: polygon(10px 0, calc(100% - 8px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+}
+.banner_btn a{
+    transition: .8s;
+    background: white;
+    padding: 15px 20px;
+    border: none;
+    font-family: var(--handjet);
+    font-size: 2rem;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10px 0, calc(100% - 8px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+    cursor: pointer;
+    color: #000;
+}
+.banner_btn i{
+    background: transparent;
+    padding-left: 10px;
+    padding-top: 8px;
+    color: #171717;
+    transition: 0.8s;
+}
+.banner_btn a:hover{
+    background: #000;
+    color: white;
+}
+.banner_btn a:hover i{
+    background: transparent;
+    color: white;
+}
+/* banner2 details */
+.banner-detail2{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-profile-card img{
+    width: 400px;
+    margin-right: 8rem;
+    border-radius: 20px 20px 0 0;
+    border: none;
+}
+.banner-profile-card{
+    background: white;
+    width: 400px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    transition: .8s;
+}
+
+.banner-profile-card:hover{
+    transform: translateY(-20px);
+}
+
+.banner-card-detail{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.banner-card-detail a{
+    background: transparent;
+    margin: 0 25px;
+}
+.banner-card-detail a i{
+    background: transparent;
+    color: #000;
+    font-size: 2rem;
+}
+/* banner end */
+/* skill section start */
+#skill{
+    margin-top: 100px;
+    text-align: center;
+}
+#skill i{
+    color: white;
+    margin: 0 20px;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+}
+#skill i h4{
+    font-family: var(--handjet);
+}
+/* skill section ends */
+
+/* about section start here */
+#about{
+    margin-top: 50px;
+    padding: 2rem 0rem;
+}
+.about_content{
+    display: flex;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.about-header{
+    text-align: center;
+    color: white;
+    font-family: var(--handjet);
+}
+.about-header h1{
+    font-weight: 400;
+    font-size: 5rem;
+}
+.about-header h4{
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: var(--miriam);
+}
+
+.about-left{
+    border: 2px solid #fff;
+    padding: 1rem;
+    margin-left: 5rem;
+    overflow: hidden;
+}
+.about-left img{
+    transition: .8s;
+}
+.about-left:hover img{
+    transform: scale(1.1);
+}
+
+.about-right{
+    font-family: var(--handjet);
+    color: white;
+    margin-left: 10rem;
+}
+.about-right h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 188, 212);
+}
+.about-right p{
+    font-family: var(--miriam);
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2.5rem;
+} 
+.about_btn{
+    border: none;
+    clip-path: polygon(10px 0, calc(100% - 8px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+}
+.about_btn a i{
+    background: transparent;
+}
+.about_btn a{
+    transition: .8s;
+    background: white;
+    padding: 15px 20px;
+    border: none;
+    font-family: var(--handjet);
+    font-size: 2rem;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10px 0, calc(100% - 8px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+    cursor: pointer;
+    color: #000;
+}
+
+.about_btn a:hover{
+    background: #000;
+    color: #fff;
+}
+/* about section ends here */
+/* projects section start here */
+#projects{
+    padding: 1rem;
+    margin-top: 50px;
+}
+.project-header{
+    text-align: center;
+    color: white;
+}
+.project-header h1{
+    font-family: var(--handjet);
+    font-size: 5rem;
+}
+.project-header h4{
+    font-family: var(--miriam);
+}
+.project_wrapper{
+    padding: 10px 10%;
+}
+.projects-content{
+    padding: 50px 0;
+}
+.project-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.box img{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    transition: transform .5s;
+}
+.overlay{
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#000000 80%);
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height .5s;
+}
+.overlay h1{
+    font-weight: 500;
+    margin-bottom: 35px;
+    font-family: var(--miriam);
+    background: transparent;    
+    font-size: 3rem;
+    color: white;
+    font-family: var(--handjet);
+}
+.overlay p{
+    background: transparent;
+    color: white;
+    font-family: var(--miriam);
+    font-size: 20px;
+}
+.box:hover img{
+    transform: scale(1.1);
+    filter: blur(10px);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+.project_btn{
+    border: none;
+    background: transparent;
+    margin-top: 30px;
+}
+.project_btn a{
+    transition: .8s;
+    background: white;
+    padding: 15px 20px;
+    border: none;
+    font-family: var(--handjet);
+    font-size: 2rem;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10px 0, calc(100% - 8px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+    cursor: pointer;
+    color: #000;
+}
+/* projects section ends here */
+
+/* footer start */
+
+#contact{
+    background: #fff !important;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 250px , 1fr));
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+#contact h1{
+    margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    font-family: var(--handjet);
+    font-size: 3rem;
+}
+#contact a,p,h2{
+    color: rgb(23, 23, 23);
+    font-family: var(--miriam);
+}
+.footer-1 h1 i{
+    border: 1px solid #000;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.footer-1 h2{
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: rgb(23, 23, 23);
+    font-weight: 300;
+}
+
+.footer-2 a{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: rgb(23, 23, 23);
+}
+
+.footer-3 p{
+    font-weight: 300;
+    color: rgb(23, 23, 23);
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.footer-4 h1{
+    padding-bottom: 3rem;
+}
+.footer-social a{
+    font-size: 3rem;
+}
+
+.footer-social a i{
+    padding: 0 15px;
+}
+/* footer end */
+
+
+
+
+/* page 2 style start here*/
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-left{
+    width: 45%;
+}
+.body-left img{
+    height: 95vh;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+.body-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    font-family: var(--handjet);
+    color: white;
+}
+
+.ring{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+.ring::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+    border-radius: 50%;
+}
+.body-right span{
+    color: #737373;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out  infinite;
+}
+@keyframes text{
+    50%{
+        color: #171717;
+    }
+}
+/* page 2 style end here */
