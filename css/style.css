@@ -49,6 +49,7 @@ img {
     font-size: 30px;
     color: #fff;
     padding: 5px;
+    cursor: pointer;
 }
 
 /* toggleable navbar start*/
