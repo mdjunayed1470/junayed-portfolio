@@ -26,6 +26,19 @@ img {
     display: block;
     margin: 0 auto; 
 }
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup .8s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+          transform: translateY(0px);
+    }
+    
+}
 /* basic code ends */
 /* header start */
 .nav{
