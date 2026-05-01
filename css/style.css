@@ -265,6 +265,7 @@ img {
 
 .about-left{
     border: 2px solid #fff;
+    max-width: 80%;
     padding: 1rem;
     margin-left: 5rem;
     overflow: hidden;
