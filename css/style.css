@@ -278,6 +278,7 @@ img {
 
 .about-right{
     font-family: var(--handjet);
+    width: auto;
     color: white;
     margin-left: 10rem;
 }
@@ -288,7 +289,7 @@ img {
 }
 .about-right p{
     font-family: var(--miriam);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     margin-bottom: 2.5rem;
 } 
