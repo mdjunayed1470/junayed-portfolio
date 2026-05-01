@@ -30,7 +30,7 @@ img {
 .anim{
     opacity: 0;
     transform: translateY(30px);
-    animation: moveup .8s linear forwards;
+    animation: moveup .5s linear forwards;
 }
 @keyframes moveup {
     100%{
@@ -129,6 +129,7 @@ img {
         line-height: 24px;
         color: rgb(255, 255, 255);
         margin-bottom: 1.2rem;
+        animation-delay: 0.5s;
     }
 .banner-detail h1{
     font-family: var(--handjet);
@@ -136,6 +137,7 @@ img {
     font-size: 5.5rem;
     line-height: 96px;
     color: rgb(255, 255, 255);
+    animation-delay: 0.5s;
 }
 
 .banner-detail h2{
@@ -145,6 +147,7 @@ img {
     line-height: 24px;
     color: rgb(255, 255, 255);
     margin-top: 1.2rem;
+     animation-delay: 0.5s;
 }
 .banner-detail p{
     font-family: var(--miriam);
@@ -156,10 +159,12 @@ img {
     margin-bottom: 1.5rem;
     text-align: justify;
     width: 80%;
+     animation-delay: 0.7s;
 }
 .banner_btn{
     border: none;
     clip-path: polygon(10px 0, calc(100% - 8px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+     animation-delay: 0.8s;
 }
 .banner_btn a{
     transition: .8s;
@@ -195,6 +200,7 @@ img {
 .banner-detail2{
     display: flex;
     flex-direction: column;
+     animation-delay: 1s;
 }
 
 .banner-profile-card img{
@@ -236,6 +242,7 @@ img {
 #skill{
     margin-top: 100px;
     text-align: center;
+     animation-delay: 1s;
 }
 #skill i{
     color: white;
@@ -253,6 +260,7 @@ img {
 #about{
     margin-top: 50px;
     padding: 2rem 0rem;
+     animation-delay: 1s;
 }
 .about_content{
     display: flex;
