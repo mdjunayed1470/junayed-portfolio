@@ -524,6 +524,7 @@ img {
     height: 95vh;
     object-fit: cover;
     border: 2px solid #000;
+    filter: opacity(.5);
 }
 
 .body-right{
@@ -542,6 +543,7 @@ img {
     height: 400px;
     border-radius: 50%;
     animation: ring 2s linear infinite;
+    right: 10%;
 }
 
 @keyframes ring {
